@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th {
+        background-color: #4ace29
+    }
+
+    .day_column {
+            width: 128px;
+    }
+    .time_column{
+        width: 100px;
+    }
+    .subject_column{
+        min-width: 160px;
+        width: auto;
+    }
+    .room_column{
+        width: 100px;
+    }
+
+    </style> 
+    </head>
+    <body>
+
+        <h2>Розклад занять</h2>
+        <p> </p>
+        <table style="width:60%">
+        <thead>
+            <tr>
+                <th rowspan="2", class="day_column">День </th>  <!-- Об'єднання клітинок по висоті (вертикалі) -->
+                <th colspan="2">Час</th>                          <!-- Об'єднання клітинок по ширині (горизонталі) -->
+                <th rowspan="2", class="subject_column">Предмет</th>
+                <th rowspan="2", class="room_column">Аудиторія</th>
+            </tr>
+             <tr>
+                <th class="time_column">Початок</th>
+                <th class="time_column">Кінець</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--
+             <tr>
+                <td rowspan="2"> </td>
+                <td></td>
+                <td></td> 
+                <td> </td>
+                <td></td>  
+            </tr> 
+            -->
+            <tr>    <!--  Перехід на новий рядок -->    <!-- 1 ряд -->
+                <td rowspan="2"> Понеділок</td>     <!-- День (Об'єднання по висоті) -->
+                <td>08:00 </td>                     <!-- час (початок) -->
+                <td>09:30 </td>                     <!-- Час (кінець) -->
+                <td> Математика</td>                <!-- Предмет -->
+                <td>101</td>                        <!-- Аудиторія -->
+            </tr>
+            <tr>        <!-- 2 ряд -->
+                <td>09:40 </td>
+                <td>11:10 </td>
+                <td>Фізика</td>
+                <td>202</td>
+            </tr>
+            <tr>        <!-- 3 ряд -->
+                <td rowspan="2"> Вівторок</td>
+                <td>08:00</td>
+                <td>9:30</td> 
+                <td>Інформатика</td>
+                <td>303</td>  
+            </tr>
+            <tr>        <!-- 4 ряд -->
+                <td>9:40</td>
+                <td>11:30</td> 
+                <td>Хімія</td>
+                <td>404</td>  
+            </tr>
+
+        </tbody>
+    </body>
+    </html>
